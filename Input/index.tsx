@@ -12,6 +12,8 @@ const Input = ({
 	onChange,
 	placeholder,
 	className,
+	id,
+	name,
 	...props
 }: InputProps) => {
 	const [_value, _setValue] = useState(value);
@@ -43,16 +45,20 @@ const Input = ({
 						setSelected(false);
 					}}
 					type={type}
+					placeholder=" "
+					id={id}
+					name={name}
 				/>
 			</div>
-			<span
+			<label
+				htmlFor={id}
 				className={classNames(
 					styles.placeholder,
 					filling || selected ? styles.filling : undefined
 				)}
 			>
 				{placeholder}
-			</span>
+			</label>
 		</div>
 	);
 };

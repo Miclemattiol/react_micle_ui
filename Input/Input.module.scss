@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap");
+
 .Input {
 	position: relative;
 	border: 1px solid black;
@@ -27,6 +29,7 @@
 			height: 100%;
 			outline: none;
 			border: none;
+			font-family: "Roboto", sans-serif;
 		}
 	}
 
@@ -42,6 +45,7 @@
 		background-color: transparent;
 		text-overflow: ellipsis;
 		overflow: hidden;
+		font-family: "Roboto", sans-serif;
 		&.filling {
 			top: 0;
 			left: 8px;
