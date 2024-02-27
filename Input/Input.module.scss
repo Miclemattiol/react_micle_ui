@@ -11,7 +11,7 @@
 	display: flex;
 	align-items: center;
 
-	.placeholder,
+	label,
 	input {
 		font-size: 1rem;
 
@@ -33,7 +33,7 @@
 		}
 	}
 
-	.placeholder {
+	label {
 		position: absolute;
 		pointer-events: none;
 		transition: all 0.2s;
@@ -46,7 +46,18 @@
 		text-overflow: ellipsis;
 		overflow: hidden;
 		font-family: "Roboto", sans-serif;
-		&.filling {
+		// &.filling {
+		// 	top: 0;
+		// 	left: 8px;
+		// 	font-size: 0.75rem;
+		// 	background-color: white;
+		// 	padding: 0 2px;
+		// }
+	}
+
+	&:not(:has(input:placeholder-shown)),
+	&:has(input:focus) {
+		label {
 			top: 0;
 			left: 8px;
 			font-size: 0.75rem;
