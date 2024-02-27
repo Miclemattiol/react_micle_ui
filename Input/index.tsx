@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import styles from "./Input.module.scss";
 import classNames from "classnames";
